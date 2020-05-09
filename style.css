@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#ui-wrapper{
+    display: grid; 
+    grid-template-columns: 55% 45%; 
+    width: 100%; 
+}
+.hero-wrapper{
+    grid-column: 1;
+    grid-row: 1/2;
+    background-image: url('./images/bg-pattern-desktop.svg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+.logo-bar{
+    height: 80px;
+    margin-top: 40px;
+}
+.cta-wrapper{
+    margin-top: 60px;
+    width: 600px;
+}
+.cta-wrapper h1{
+    font-size: 80px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: #ce9797;
+    letter-spacing: 10px;
+}
+.cta-wrapper h2{
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.cta-wrapper p{
+    line-height: 30px;
+    color: #ce9797;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 20px;
+    padding-right: 30px;
+    width: 500px;
+}
+.cta-wrapper form{
+    margin-top: 30px;
+}
+.cta-wrapper input{
+    height: 45px;
+    width: 350px;
+    color: #ce9797;
+    border-radius: 40px;
+    border: solid 1px #ce9797;
+    padding: 10px 50px 10px 20px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 200;
+}
+::placeholder{
+    color: #ce9797;
+}
+.cta-wrapper button{
+    height: 45px;
+    width: 80px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, rgba(248,191,191,1) 0%, rgba(238,140,140,1) 100%);
+    border: none;
+    position: absolute;
+    margin-left: -40px;
+    box-shadow: 6px 3px 10px -1px hsl(229, 6%, 66%);
+}
+.hero-image-wrapper{
+    grid-column: 2;
+    grid-row: 1/2;
+    background-image: url('./images/hero-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.hero-image-wrapper img{
+    height: 100%;
+}
+
+footer{
+   margin-top: 200px;
+   color: #ce9797;
+}
+
+@media(max-width:900px){
+    #ui-wrapper{
+        grid-template-columns: 100%;
+        width: 100%;
+
+    }
+    .container{
+        width: 100%;
+    }
+    .hero-wrapper{
+        grid-column: 1;
+        grid-row: 2/2;
+    }
+    .hero-image-wrapper{
+        grid-column: 1;
+        grid-row: 1/2;
+        background-image: url('./images/hero-mobile.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 600px;
+    }
+    .logo-bar{
+        background:#fff;
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 80px;
+    }
+
+}
