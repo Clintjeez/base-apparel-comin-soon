@@ -58,10 +58,10 @@ body{
     padding-right: 30px;
     width: 500px;
 }
-.cta-wrapper form{
+.cta-form{
     margin-top: 30px;
 }
-.cta-wrapper input{
+.email-input{
     height: 45px;
     width: 350px;
     color: #ce9797;
@@ -71,20 +71,66 @@ body{
     outline: none;
     font-size: 14px;
     font-weight: 200;
+    margin-bottom: 15px;
 }
 ::placeholder{
     color: #ce9797;
 }
-.cta-wrapper button{
+.btn-submit{
     height: 45px;
     width: 80px;
     border-radius: 40px;
-    background: linear-gradient(90deg, rgba(248,191,191,1) 0%, rgba(238,140,140,1) 100%);
+    background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
     border: none;
     position: absolute;
     margin-left: -40px;
     box-shadow: 6px 3px 10px -1px hsl(229, 6%, 66%);
 }
+.btn-submit:hover{
+    background: linear-gradient(135deg,#ffffff, #e6baba); 
+    cursor: pointer;
+    outline: none;
+}
+
+.input--error {
+    border: 2px solid hsl(0, 93%, 68%);
+    color: #111;
+  }
+  
+  .label--error::before {
+    content: "!";
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 7rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    color: #fefefe;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.75;
+    background-color: hsl(0, 93%, 68%);
+  }
+  
+  .label--error::after {
+    display: block;
+    content: "Please provide a valid email";
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+    color: hsl(0, 93%, 68%);
+  }
+  
+  .label--success::after {
+    display: block;
+    content: "Your email address has been added successfully!";
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #111;
+  }
+  
 .hero-image-wrapper{
     grid-column: 2;
     grid-row: 1/2;
@@ -108,7 +154,6 @@ footer{
     #ui-wrapper{
         grid-template-columns: 100%;
         width: 100%;
-
     }
     .container{
         width: 100%;
@@ -157,18 +202,22 @@ footer{
         width: auto;
         font-size: 14px;
     }
-    .cta-wrapper form{
+    .cta-form{
         margin-top: 50px;
     }
-    .cta-wrapper input{
+    .email-input{
         width: 300px;
         height: 45px;
     }
-    .cta-wrapper button{
+    .btn-submit{
         height: 45px;
         width: 60px;
     }
-
+.btn-submit:hover{
+    background: linear-gradient(135deg,#ffffff, #e6baba); 
+    cursor: pointer;
+    outline: none;
+}
     footer{
         margin-bottom: 30px;
     }
