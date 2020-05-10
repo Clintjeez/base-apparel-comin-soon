@@ -122,18 +122,55 @@ footer{
         grid-row: 1/2;
         background-image: url('./images/hero-mobile.jpg');
         background-position: center;
-        background-size: cover;
         background-repeat: no-repeat;
-        height: 600px;
+        background-size: contain;
+        height: 275px;
+        width: 100%;
+        margin-top: 100px;
     }
     .logo-bar{
         background:#fff;
-        height: 100px;
+        height: 80px;
         width: 100%;
         position: absolute;
         top: 0;
         margin-top: 0;
-        margin-bottom: 80px;
+        margin-bottom: 20px;
+    }
+    .logo-bar img{
+       height: 30px;
+       width: 140px;
+       margin: 15px 30px;
+    }
+    .cta-wrapper{
+        width: 100%;
+        text-align: center;
+    }
+    .cta-wrapper h1{
+        font-size: 60px;
+    }
+    .cta-wrapper h2{
+        font-size: 40px;
+    }
+    .cta-wrapper p{
+        padding: 15px;
+        width: auto;
+        font-size: 14px;
+    }
+    .cta-wrapper form{
+        margin-top: 50px;
+    }
+    .cta-wrapper input{
+        width: 300px;
+        height: 45px;
+    }
+    .cta-wrapper button{
+        height: 45px;
+        width: 60px;
+    }
+
+    footer{
+        margin-bottom: 30px;
     }
 
 }
